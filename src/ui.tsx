@@ -139,7 +139,7 @@ export const SelectorTextItem = ({
   <TouchableOpacity
     onPress={onPress}
     style={{
-      backgroundColor: selected ? theme.blue : "white",
+      backgroundColor: selected ? theme.blue : "#D3D3D3",
       borderColor: selected ? theme.darkBlue : theme.lightGray,
       borderBottomWidth: 2,
       paddingTop: 8,
@@ -172,13 +172,13 @@ export const SelectorTextItem = ({
             style={{
               fontWeight: "600",
               fontSize: 16,
-              color: selected ? "white" : theme.darkText,
+              color: selected ? "#D3D3D3" : theme.darkText,
               marginRight: 8,
             }}
           >
             {text}
           </Text>
-          {selected && <Feather name={"check"} size={16} color={"white"} />}
+          {selected && <Feather name={"check"} size={16} color={"#D3D3D3"} />}
         </View>
       </View>
 
@@ -199,7 +199,7 @@ export const SelectorTextItem = ({
           style={{
             fontWeight: "400",
             fontSize: 16,
-            color: selected ? "white" : theme.darkText,
+            color: selected ? "#D3D3D3" : theme.darkText,
           }}
         >
           {description}
@@ -268,7 +268,7 @@ export const RoundedSelectorButton = ({
   <TouchableOpacity
     onPress={onPress}
     style={{
-      backgroundColor: selected ? theme.blue : "white",
+      backgroundColor: selected ? theme.blue : "#D3D3D3",
       borderColor: selected ? theme.darkBlue : theme.lightGray,
       borderBottomWidth: 2,
       paddingTop: 12,
@@ -287,7 +287,7 @@ export const RoundedSelectorButton = ({
         style={{
           fontWeight: "700",
           fontSize: 16,
-          color: selected ? "white" : theme.darkText,
+          color: selected ? "#D3D3D3" : theme.darkText,
           marginLeft: 12,
         }}
       >
@@ -295,7 +295,7 @@ export const RoundedSelectorButton = ({
       </Text>
     </View>
 
-    {selected && <Feather name={"check"} size={16} color={"white"} />}
+    {selected && <Feather name={"check"} size={16} color={"#D3D3D3"} />}
   </TouchableOpacity>
 );
 
@@ -308,7 +308,7 @@ export const FloatingCard = ({
 }) => (
   <View
     style={{
-      backgroundColor: "white",
+      backgroundColor: "#D3D3D3",
       borderWidth: 1,
       borderColor: theme.lightGray,
       borderRadius: 8,
@@ -465,7 +465,7 @@ export const ActionButton = ({
 
 ActionButton.defaultProps = {
   fillColor: theme.blue,
-  textColor: "white",
+  textColor: "#D3D3D3",
   width: 120,
 };
 
